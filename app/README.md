@@ -13,7 +13,7 @@ You must only modify
 
 ## Building and checking
 
-Any static data you use in your app must be documented in the taf folder
+Any static data you use in your app must be documented in the [taf folder](https://github.com/ices-tools-dev/ShinyModule_Template/tree/main/taf)
 
 To build and test your app make sure R is in the app folder of the repository
 
