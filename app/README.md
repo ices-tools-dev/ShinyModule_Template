@@ -7,15 +7,30 @@
 
 ## Requirements
 
-You must
-
+You must only modify
+* `mod_template.R`
+* `utilities_template.R`
 
 ## Building and checking
 
-To build and test your app
+Any static data you use in your app must be documented in the taf folder
+
+To build and test your app make sure R is in the app folder of the repository
 
 ```r
 # some R code to show how to build and test
+
+# update app data folder (should provide this as a function in icesUtils)
+od <- setwd("taf")
+TAF::taf.boot()
+TAF::source.all()
+
+# copy data into app ?
+TAF::cp("data", "../app/data")
+setwd(od)
+
+# run app:
+shiny::runApp("app)
 ```
 
 ## Details
